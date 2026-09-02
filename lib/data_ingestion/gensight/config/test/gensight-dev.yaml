@@ -1,0 +1,14 @@
+file:
+  header: true
+  delimiter: '|'
+transformations_needed: true
+columns:
+  ProjectID:
+    bax_standard: ProjectID_RENAMED
+    datatype: long
+  Project Priority:
+    bax_standard: Project_Priority_RENAMED
+    datatype: string
+source_path: "s3://baxaws-dev-enterpriseanalytics-edh-jde-inbound/raw/GENSIGHT/global_projects"
+target_path: "s3://baxaws-dev-enterpriseanalytics-edh-jde-inbound/raw/GENSIGHT/global_projects_target"
+skip_target_path: "s3://baxaws-dev-enterpriseanalytics-edh-jde-inbound/raw/GENSIGHT/global_projects_skip"

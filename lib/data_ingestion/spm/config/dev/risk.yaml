@@ -1,0 +1,81 @@
+file:
+  header: true
+  delimiter: ','  
+transformations_needed: true
+target:
+  db_name: enterpriseanalytics_edh_ita_spm_global
+  table_name: p_srvc_now_risk
+  unique_key: SYS_GEND_ID
+columns:
+  TASK_VALUE:
+    bax_standard: TASK_ID
+    datatype: string
+  TASK_DISPLAY_VALUE:
+    bax_standard: TASK_NAME
+    datatype: string
+  NUMBER_VALUE:
+    bax_standard: RISK_NUM
+    datatype: string
+  SHORT_DESCRIPTION_VALUE:
+    bax_standard: RISK_SHRT_DESCR
+    datatype: string
+  DESCRIPTION_VALUE:
+    bax_standard: RISK_DESCR
+    datatype: string
+  RISK_OWNER_VALUE:
+    bax_standard: RISK_OWNR_ID
+    datatype: string
+  RISK_OWNER_DISPLAY_VALUE:
+    bax_standard: RISK_OWNR_NAME
+    datatype: string
+  ASSIGNED_TO_VALUE:
+    bax_standard: ASGND_TO_ID
+    datatype: string
+  ASSIGNED_TO_DISPLAY_VALUE:
+    bax_standard: ASGND_TO_NAME
+    datatype: string
+  PROBABILITY_VALUE:
+    bax_standard: PBTY_CD
+    datatype: string
+  PROBABILITY_DISPLAY_VALUE:
+    bax_standard: PBTY_DESCR
+    datatype: string
+  DUE_DATE_VALUE:
+    bax_standard: DUE_DTM
+    datatype: timestamp
+  STATE_VALUE:
+    bax_standard: STATE_CD
+    datatype: string
+  STATE_DISPLAY_VALUE:
+    bax_standard: STATE_DESCR
+    datatype: string
+  IMPACT_VALUE:
+    bax_standard: IMPCT_CD
+    datatype: decimal(38,0)
+  IMPACT_DISPLAY_VALUE:
+    bax_standard: IMPCT_DESCR
+    datatype: string
+  RISK_RANK_VALUE:
+    bax_standard: RISK_RNK_NUM
+    datatype: decimal(38,0)
+  RISK_VALUE_VALUE:
+    bax_standard: RISK_VAL_CD
+    datatype: string
+  RISK_VALUE_DISPLAY_VALUE:
+    bax_standard: RISK_VAL_DESCR
+    datatype: string
+  MITIGATION_VALUE:
+    bax_standard: MITGN_TXT
+    datatype: string
+  SYS_ID_VALUE:
+    bax_standard: SYS_GEND_ID
+    datatype: string
+  SYS_UPDATED_ON_VALUE:
+    bax_standard: UPDTD_ON_DTM
+    datatype: timestamp
+   
+source_path: "s3://baxaws-dev-enterpriseanalytics-edh-ita-inbound/servicenow/SPM/SNTLD/risk"
+target_path: "s3://baxaws-dev-enterpriseanalytics-ita-translate/servicenow/SPM/global"
+archive_path: "s3://baxaws-dev-enterpriseanalytics-edh-ita-inbound/servicenow/SPM/archive/risk"
+skip_target_path: "s3://baxaws-dev-enterpriseanalytics-edh-ita-inbound/servicenow/SPM/SNTLD/skip/risk_skip"
+

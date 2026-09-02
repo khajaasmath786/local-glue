@@ -1,0 +1,13 @@
+{
+    "sql": {
+      "step1_run_crawler": {
+        "action": "run_crawler",
+        "database_name": "enterpriseanalytics_edh_nadta",
+        "table_name": "aro_sop",
+        "s3_target_path": "s3://baxaws-tst-enterpriseanalytics-edh-jde-inbound/raw_sop/",
+        "role": "baxaws-test-enterpriseanalytics-edh-glue-role",
+        "crawler_name": "baxaws_enterpriseanalytics_edh_sop_crawler"
+      }
+    }
+  }
+  

@@ -1,0 +1,10 @@
+database:
+  host: "dbsJDE9LD.aws.baxter.com"
+  port: 1521
+  username: "mohammk2"
+  password: "gAAAAABlOxlswXfP8VPCTNdQ0R46AOhwHCh49zVOvTrjzG_DGIwEWgi-D8-12mt8cnN9nhDnS9FzYPvDYSc_2aMAy_ezai8f3Q=="
+  key: "oUyTNWHyIyNHr6APjbubS7o-hodmK1twzkGrdY44tO0="
+  service_name: "svcJDE9LD.aws.baxter.com"
+  database_type: "oracle"
+  table: "F590002"
+  schema: "LADTA"

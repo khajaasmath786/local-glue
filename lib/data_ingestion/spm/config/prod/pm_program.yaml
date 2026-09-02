@@ -1,0 +1,69 @@
+file:
+  header: true
+  delimiter: ','
+transformations_needed: true
+target:
+  db_name: enterpriseanalytics_edh_ita_spm_global
+  table_name: p_srvc_now_proj_mgmt_pgm
+  unique_key: SYS_GEND_ID
+columns:
+  NUMBER_VALUE:
+    bax_standard: PGM_NUM
+    datatype: string
+  SHORT_DESCRIPTION_VALUE:
+    bax_standard: PGM_SHRT_DESCR
+    datatype: string
+  PROGRAM_MANAGER_DISPLAY_VALUE:
+    bax_standard: PGM_MGR_NAME
+    datatype: string
+  PORTFOLIO_DISPLAY_VALUE:
+    bax_standard: PRTFL_DESCR
+    datatype: string
+  ACTIVE_VALUE:
+    bax_standard: ACTV_IND
+    datatype: boolean
+  STATE_VALUE:
+    bax_standard: STATE_CD
+    datatype: decimal(38,0)
+  STATE_DISPLAY_VALUE:
+    bax_standard: STATE_DESCR
+    datatype: string
+  STATUS_VALUE:
+    bax_standard: STS_DESCR
+    datatype: string
+  PERCENT_COMPLETE_VALUE:
+    bax_standard: CMPLN_PCT
+    datatype: decimal(38,2)
+  START_DATE_VALUE:
+    bax_standard: STRT_DTM
+    datatype: timestamp
+  END_DATE_VALUE:
+    bax_standard: END_DTM
+    datatype: timestamp
+  SYS_ID_VALUE:
+    bax_standard: SYS_GEND_ID
+    datatype: string
+  WORK_START_VALUE:
+    bax_standard: WRK_STRT_DTM
+    datatype: timestamp
+  WORK_END_VALUE_VALUE:
+    bax_standard: WRK_END_DTM
+    datatype: timestamp
+  U_CONFIDENTIAL_VALUE:
+    bax_standard: U_CONFTL_IND
+    datatype: boolean
+  U_CONFIDENTIAL_GROUPS_VALUE:
+    bax_standard: U_CONFTL_GRP
+    datatype: string
+  U_CONFIDENTIAL_LEVEL_VALUE:
+    bax_standard: U_CONFTL_LVL
+    datatype: string
+  SYS_UPDATED_ON_VALUE:
+    bax_standard: UPDTD_ON_DTM
+    datatype: timestamp
+    
+    
+source_path: "s3://baxaws-prd-enterpriseanalytics-edh-ita-inbound/servicenow/SPM/SNTLD/pm_program/"
+target_path: "s3://baxaws-prd-enterpriseanalytics-ita-translate/servicenow/SPM/global"
+archive_path: "s3://baxaws-prd-enterpriseanalytics-edh-ita-inbound/servicenow/SPM/archive/pm_program/"
+skip_target_path: "s3://baxaws-prd-enterpriseanalytics-edh-ita-inbound/servicenow/SPM/SNTLD/skip/pm_program_skip"

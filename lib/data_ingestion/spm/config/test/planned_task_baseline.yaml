@@ -1,0 +1,65 @@
+file:
+  header: true
+  delimiter: ','  
+transformations_needed: true
+target:
+  db_name: enterpriseanalytics_edh_ita_spm_global
+  table_name: p_srvc_now_pland_task_bsln
+  unique_key: SYS_GEND_ID
+columns:
+  DESCRIPTION_VALUE:
+    bax_standard: BSLN_DESCR
+    datatype: string
+  ENABLE_FINANCIAL_BASELINE_VALUE:
+    bax_standard: ENBL_FINCL_BSLN_IND
+    datatype: boolean
+  ENABLE_TASK_BASELINE_VALUE:
+    bax_standard: ENBL_TASK_BSLN_IND
+    datatype: boolean
+  NAME_VALUE:
+    bax_standard: TASK_NAME
+    datatype: string
+  PLAN_VALUE:
+    bax_standard: PLAN_CD
+    datatype: string
+  PLAN_DISPLAY_VALUE:
+    bax_standard: PLAN_DESCR
+    datatype: string
+  SYS_CREATED_BY_VALUE:
+    bax_standard: CRTD_BY_NAME
+    datatype: string
+  SYS_CREATED_ON_VALUE:
+    bax_standard: CRTD_ON_DTM
+    datatype: timestamp
+  SYS_DOMAIN_VALUE:
+    bax_standard: DOM_NAME
+    datatype: string
+  SYS_ID_VALUE:
+    bax_standard: SYS_GEND_ID
+    datatype: string
+  SYS_MOD_COUNT_VALUE:
+    bax_standard: MOD_CNT
+    datatype: decimal(38,0)
+  SYS_TAGS_VALUE:
+    bax_standard: TAGS_DESCR
+    datatype: string
+  SYS_UPDATED_BY_VALUE:
+    bax_standard: UPDTD_BY_NAME
+    datatype: string
+  SYS_UPDATED_ON_VALUE:
+    bax_standard: UPDTD_ON_DTM
+    datatype: timestamp
+  SYSTEM_VALUE:
+    bax_standard: SYS_IND
+    datatype: boolean
+  TOP_TASK_VALUE:
+    bax_standard: TOP_TASK_ID
+    datatype: string
+  TOP_TASK_DISPLAY_VALUE:
+    bax_standard: TOP_TASK_DESCR
+    datatype: string
+   
+source_path: "s3://baxaws-tst-enterpriseanalytics-edh-ita-inbound/servicenow/SPM/SNTLD/planned_task_baseline"
+target_path: "s3://baxaws-tst-enterpriseanalytics-ita-translate/servicenow/SPM/global"
+archive_path: "s3://baxaws-tst-enterpriseanalytics-edh-ita-inbound/servicenow/SPM/archive/planned_task_baseline"
+skip_target_path: "s3://baxaws-tst-enterpriseanalytics-edh-ita-inbound/servicenow/SPM/SNTLD/skip/planned_task_baseline_skip"

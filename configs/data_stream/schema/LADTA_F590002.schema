@@ -1,0 +1,419 @@
+{
+    "columns": [
+        {
+            "name": "bi_pman8",
+            "mapping": "$.before-image.BI_PMAN8",
+            "sql_type": "DECIMAL"
+        },
+        {
+            "name": "bi_pmkcoo",
+            "mapping": "$.before-image.BI_PMKCOO",
+            "sql_type": "VARCHAR(10)"
+        },
+        {
+            "name": "PMAN8",
+            "mapping": "$.data.PMAN8",
+            "sql_type": "DECIMAL"
+        },
+        {
+            "name": "PMKCOO",
+            "mapping": "$.data.PMKCOO",
+            "sql_type": "VARCHAR(10)"
+        },
+        {
+            "name": "PMFNAME",
+            "mapping": "$.data.PMFNAME",
+            "sql_type": "VARCHAR(50)"
+        },
+        {
+            "name": "PMLNAME",
+            "mapping": "$.data.PMLNAME",
+            "sql_type": "VARCHAR(50)"
+        },
+        {
+            "name": "PMIMN",
+            "mapping": "$.data.PMIMN",
+            "sql_type": "VARCHAR(2)"
+        },
+        {
+            "name": "PMTTL",
+            "mapping": "$.data.PMTTL",
+            "sql_type": "VARCHAR(60)"
+        },
+        {
+            "name": "PMY59AC1B",
+            "mapping": "$.data.PMY59AC1B",
+            "sql_type": "VARCHAR(6)"
+        },
+        {
+            "name": "PMY59CDID",
+            "mapping": "$.data.PMY59CDID",
+            "sql_type": "VARCHAR(20)"
+        },
+        {
+            "name": "PMY59CIDT",
+            "mapping": "$.data.PMY59CIDT",
+            "sql_type": "DECIMAL"
+        },
+        {
+            "name": "PMY59DXLB",
+            "mapping": "$.data.PMY59DXLB",
+            "sql_type": "DECIMAL"
+        },
+        {
+            "name": "PMY59IDVL",
+            "mapping": "$.data.PMY59IDVL",
+            "sql_type": "DECIMAL"
+        },
+        {
+            "name": "PMINDT",
+            "mapping": "$.data.PMINDT",
+            "sql_type": "DECIMAL"
+        },
+        {
+            "name": "PMY59ITVT",
+            "mapping": "$.data.PMY59ITVT",
+            "sql_type": "DECIMAL"
+        },
+        {
+            "name": "PMY59IVOL",
+            "mapping": "$.data.PMY59IVOL",
+            "sql_type": "DECIMAL"
+        },
+        {
+            "name": "PMY59IVLT",
+            "mapping": "$.data.PMY59IVLT",
+            "sql_type": "DECIMAL"
+        },
+        {
+            "name": "PMY59MCSN",
+            "mapping": "$.data.PMY59MCSN",
+            "sql_type": "DECIMAL"
+        },
+        {
+            "name": "PMMCU",
+            "mapping": "$.data.PMMCU",
+            "sql_type": "VARCHAR(24)"
+        },
+        {
+            "name": "PMY59MTBE",
+            "mapping": "$.data.PMY59MTBE",
+            "sql_type": "VARCHAR(2)"
+        },
+        {
+            "name": "PMY59NCDT",
+            "mapping": "$.data.PMY59NCDT",
+            "sql_type": "DECIMAL"
+        },
+        {
+            "name": "PMY59NCD",
+            "mapping": "$.data.PMY59NCD",
+            "sql_type": "DECIMAL"
+        },
+        {
+            "name": "PMY59NDDT",
+            "mapping": "$.data.PMY59NDDT",
+            "sql_type": "DECIMAL"
+        },
+        {
+            "name": "PMY59PAN",
+            "mapping": "$.data.PMY59PAN",
+            "sql_type": "VARCHAR(40)"
+        },
+        {
+            "name": "PMY59PCDT",
+            "mapping": "$.data.PMY59PCDT",
+            "sql_type": "DECIMAL"
+        },
+        {
+            "name": "PMY59PCR",
+            "mapping": "$.data.PMY59PCR",
+            "sql_type": "VARCHAR(20)"
+        },
+        {
+            "name": "PMY59PCTM",
+            "mapping": "$.data.PMY59PCTM",
+            "sql_type": "DECIMAL"
+        },
+        {
+            "name": "PMY59PRDT",
+            "mapping": "$.data.PMY59PRDT",
+            "sql_type": "DECIMAL"
+        },
+        {
+            "name": "PMY59PTST",
+            "mapping": "$.data.PMY59PTST",
+            "sql_type": "VARCHAR(2)"
+        },
+        {
+            "name": "PMY59PTFR",
+            "mapping": "$.data.PMY59PTFR",
+            "sql_type": "DECIMAL"
+        },
+        {
+            "name": "PMY59PTTR",
+            "mapping": "$.data.PMY59PTTR",
+            "sql_type": "DECIMAL"
+        },
+        {
+            "name": "PMLTDT",
+            "mapping": "$.data.PMLTDT",
+            "sql_type": "DECIMAL"
+        },
+        {
+            "name": "PMLTDL",
+            "mapping": "$.data.PMLTDL",
+            "sql_type": "DECIMAL"
+        },
+        {
+            "name": "PMY59RDDT",
+            "mapping": "$.data.PMY59RDDT",
+            "sql_type": "DECIMAL"
+        },
+        {
+            "name": "PMY59RQTL",
+            "mapping": "$.data.PMY59RQTL",
+            "sql_type": "VARCHAR(6)"
+        },
+        {
+            "name": "PMY59RQFN",
+            "mapping": "$.data.PMY59RQFN",
+            "sql_type": "VARCHAR(40)"
+        },
+        {
+            "name": "PMY59RQLN",
+            "mapping": "$.data.PMY59RQLN",
+            "sql_type": "VARCHAR(40)"
+        },
+        {
+            "name": "PMY59RQDT",
+            "mapping": "$.data.PMY59RQDT",
+            "sql_type": "DECIMAL"
+        },
+        {
+            "name": "PMY59TRN1",
+            "mapping": "$.data.PMY59TRN1",
+            "sql_type": "VARCHAR(6)"
+        },
+        {
+            "name": "PMY59TRN2",
+            "mapping": "$.data.PMY59TRN2",
+            "sql_type": "VARCHAR(6)"
+        },
+        {
+            "name": "PMY59TRN3",
+            "mapping": "$.data.PMY59TRN3",
+            "sql_type": "VARCHAR(6)"
+        },
+        {
+            "name": "PMY59TTTM",
+            "mapping": "$.data.PMY59TTTM",
+            "sql_type": "DECIMAL"
+        },
+        {
+            "name": "PMTVOL",
+            "mapping": "$.data.PMTVOL",
+            "sql_type": "DECIMAL"
+        },
+        {
+            "name": "PMY59PS01",
+            "mapping": "$.data.PMY59PS01",
+            "sql_type": "VARCHAR(6)"
+        },
+        {
+            "name": "PMY59PS02",
+            "mapping": "$.data.PMY59PS02",
+            "sql_type": "VARCHAR(6)"
+        },
+        {
+            "name": "PMY59PS03",
+            "mapping": "$.data.PMY59PS03",
+            "sql_type": "VARCHAR(6)"
+        },
+        {
+            "name": "PMY59PS04",
+            "mapping": "$.data.PMY59PS04",
+            "sql_type": "VARCHAR(6)"
+        },
+        {
+            "name": "PMWDCT",
+            "mapping": "$.data.PMWDCT",
+            "sql_type": "VARCHAR(20)"
+        },
+        {
+            "name": "PMY59IBGP",
+            "mapping": "$.data.PMY59IBGP",
+            "sql_type": "VARCHAR(6)"
+        },
+        {
+            "name": "PMY59PRIV",
+            "mapping": "$.data.PMY59PRIV",
+            "sql_type": "VARCHAR(6)"
+        },
+        {
+            "name": "PMY59TZON",
+            "mapping": "$.data.PMY59TZON",
+            "sql_type": "VARCHAR(20)"
+        },
+        {
+            "name": "PMY59PRWD",
+            "mapping": "$.data.PMY59PRWD",
+            "sql_type": "VARCHAR(6)"
+        },
+        {
+            "name": "PMY59DIAB",
+            "mapping": "$.data.PMY59DIAB",
+            "sql_type": "VARCHAR(20)"
+        },
+        {
+            "name": "PMY59RACE",
+            "mapping": "$.data.PMY59RACE",
+            "sql_type": "VARCHAR(20)"
+        },
+        {
+            "name": "PMY59OCCU",
+            "mapping": "$.data.PMY59OCCU",
+            "sql_type": "VARCHAR(20)"
+        },
+        {
+            "name": "PMY59EDLV",
+            "mapping": "$.data.PMY59EDLV",
+            "sql_type": "VARCHAR(20)"
+        },
+        {
+            "name": "PMY59SOST",
+            "mapping": "$.data.PMY59SOST",
+            "sql_type": "VARCHAR(20)"
+        },
+        {
+            "name": "PMY59MAST",
+            "mapping": "$.data.PMY59MAST",
+            "sql_type": "VARCHAR(20)"
+        },
+        {
+            "name": "PMY59CCYL",
+            "mapping": "$.data.PMY59CCYL",
+            "sql_type": "VARCHAR(20)"
+        },
+        {
+            "name": "PMY59ICYL",
+            "mapping": "$.data.PMY59ICYL",
+            "sql_type": "VARCHAR(20)"
+        },
+        {
+            "name": "PMY59PHCD",
+            "mapping": "$.data.PMY59PHCD",
+            "sql_type": "VARCHAR(20)"
+        },
+        {
+            "name": "PMY593PLC",
+            "mapping": "$.data.PMY593PLC",
+            "sql_type": "VARCHAR(20)"
+        },
+        {
+            "name": "PMY593PLD",
+            "mapping": "$.data.PMY593PLD",
+            "sql_type": "VARCHAR(20)"
+        },
+        {
+            "name": "PMY59ECFL",
+            "mapping": "$.data.PMY59ECFL",
+            "sql_type": "VARCHAR(2)"
+        },
+        {
+            "name": "PMY59ECRM",
+            "mapping": "$.data.PMY59ECRM",
+            "sql_type": "VARCHAR(80)"
+        },
+        {
+            "name": "PMY59IVRF",
+            "mapping": "$.data.PMY59IVRF",
+            "sql_type": "VARCHAR(2)"
+        },
+        {
+            "name": "PMTORG",
+            "mapping": "$.data.PMTORG",
+            "sql_type": "VARCHAR(20)"
+        },
+        {
+            "name": "PMCRDJ",
+            "mapping": "$.data.PMCRDJ",
+            "sql_type": "DECIMAL"
+        },
+        {
+            "name": "PMUSER",
+            "mapping": "$.data.PMUSER",
+            "sql_type": "VARCHAR(20)"
+        },
+        {
+            "name": "PMPID",
+            "mapping": "$.data.PMPID",
+            "sql_type": "VARCHAR(20)"
+        },
+        {
+            "name": "PMJOBN",
+            "mapping": "$.data.PMJOBN",
+            "sql_type": "VARCHAR(20)"
+        },
+        {
+            "name": "PMUPMJ",
+            "mapping": "$.data.PMUPMJ",
+            "sql_type": "DECIMAL"
+        },
+        {
+            "name": "PMTDAY",
+            "mapping": "$.data.PMTDAY",
+            "sql_type": "DECIMAL"
+        },
+        {
+            "name": "PMY59GRS",
+            "mapping": "$.data.PMY59GRS",
+            "sql_type": "VARCHAR(6)"
+        },
+        {
+            "name": "PMY59SPDT",
+            "mapping": "$.data.PMY59SPDT",
+            "sql_type": "DECIMAL"
+        },
+        {
+            "name": "change_seq",
+            "mapping": "$.data.CHANGESEQ",
+            "sql_type": "VARCHAR(256)"
+        },
+        {
+            "name": "h_user",
+            "mapping": "$.data.h_user",
+            "sql_type": "VARCHAR(256)"
+        },
+        {
+            "name": "COL_timestamp",
+            "mapping": "$.metadata.timestamp",
+            "sql_type": "VARCHAR(256)"
+        },
+        {
+            "name": "COL_recordtype",
+            "mapping": "$.metadata.record-type",
+            "sql_type": "VARCHAR(256)"
+        },
+        {
+            "name": "operation",
+            "mapping": "$.metadata.operation",
+            "sql_type": "VARCHAR(256)"
+        },
+        {
+            "name": "COL_partitionkeytype",
+            "mapping": "$.metadata.partition-key-type",
+            "sql_type": "VARCHAR(256)"
+        },
+        {
+            "name": "COL_schemaname",
+            "mapping": "$.metadata.schema-name",
+            "sql_type": "VARCHAR(256)"
+        },
+        {
+            "name": "COL_tablename",
+            "mapping": "$.metadata.table-name",
+            "sql_type": "VARCHAR(256)"
+        }
+    ]
+}

@@ -1,0 +1,147 @@
+file:
+  header: true
+  delimiter: ','  
+transformations_needed: true
+target:
+  db_name: enterpriseanalytics_edh_ita_spm_global
+  table_name: p_srvc_now_proj_mgmt_proj
+  unique_key: SYS_GEND_ID
+columns:
+  NUMBER_VALUE:
+    bax_standard: PROJ_NUM
+    datatype: string
+  SHORT_DESCRIPTION_VALUE:
+    bax_standard: PROJ_SHRT_DESCR
+    datatype: string
+  PROJECT_MANAGER_VALUE:
+    bax_standard: PROJ_MGR_ID
+    datatype: string
+  PROJECT_MANAGER_DISPLAY_VALUE:
+    bax_standard: PROJ_MGR_NAME
+    datatype: string
+  U_ABOVE_THE_LINE_VALUE:
+    bax_standard: U_ABOVE_THE_LN_IND
+    datatype: string
+  PRIMARY_PORTFOLIO_VALUE:
+    bax_standard: PRIMRY_PRTFL_ID
+    datatype: string
+  PRIMARY_PORTFOLIO_DISPLAY_VALUE:
+    bax_standard: PRIMRY_PRTFL_NAME
+    datatype: string
+  ORIG_SYS_ID_VALUE:
+    bax_standard: ORIGL_SYS_ID
+    datatype: string
+  ORIG_SYS_ID_DISPLAY_VALUE:
+    bax_standard: ORIGL_SYS_DESCR
+    datatype: string
+  U_SUB_PORTFOLIO_NEW_VALUE:
+    bax_standard: U_NEW_SUB_PRTFL_ID
+    datatype: string
+  U_SUB_PORTFOLIO_NEW_DISPLAY_VALUE:
+    bax_standard: U_NEW_SUB_PRTFL_NAME
+    datatype: string
+  PRIMARY_PROGRAM_VALUE:
+    bax_standard: PRIMRY_PGM_ID
+    datatype: string
+  PRIMARY_PROGRAM_DISPLAY_VALUE:
+    bax_standard: PRIMRY_PGM_NAME
+    datatype: string
+  STATE_VALUE:
+    bax_standard: STATE_CD
+    datatype: decimal(38,0)
+  STATE_DISPLAY_VALUE:
+    bax_standard: STATE_DESCR
+    datatype: string
+  STATUS_VALUE_VALUE:
+    bax_standard: STS_CD
+    datatype: string
+  STATUS_DISPLAY_VALUE:
+    bax_standard: STS_DESCR
+    datatype: string
+  U_REGION_VALUE:
+    bax_standard: U_RGN
+    datatype: string
+  PERCENT_COMPLETE_VALUE:
+    bax_standard: CMPLN_PCT
+    datatype: decimal(38,2)
+  PHASE_VALUE:
+    bax_standard: PHASE_CD
+    datatype: string
+  PHASE_DISPLAY_VALUE:
+    bax_standard: PHASE_DESCR
+    datatype: string
+  START_DATE_VALUE:
+    bax_standard: STRT_DTM
+    datatype: timestamp
+  END_DATE_VALUE:
+    bax_standard: END_DTM
+    datatype: timestamp
+  U_FUNDING_SPONSORSHIP_VALUE:
+    bax_standard: U_FUNDG_SPNSR_CD
+    datatype: string
+  U_FUNDING_SPONSORSHIP_DISPLAY_VALUE:
+    bax_standard: U_FUNDG_SPNSR_DESCR
+    datatype: string
+  U_FUNDING_TYPE_PRJ_VALUE:
+    bax_standard: U_FUNDG_PROJ_TYP_CD
+    datatype: string
+  U_FUNDING_TYPE_PRJ_DISPLAY_VALUE:
+    bax_standard: U_FUNDG_PROJ_TYP_DESCR
+    datatype: string
+  U_COUNTRY_VALUE:
+    bax_standard: U_CNTRY_ID
+    datatype: string
+  SYS_ID_VALUE:
+    bax_standard: SYS_GEND_ID
+    datatype: string
+  TOP_PORTFOLIO_VALUE:
+    bax_standard: TOP_PRTFL_ID
+    datatype: string
+  TOP_PORTFOLIO_DISPLAY_VALUE:
+    bax_standard: TOP_PRTFL_DESCR
+    datatype: string
+  TOP_PROGRAM_VALUE:
+    bax_standard: TOP_PGM_ID
+    datatype: string
+  TOP_PROGRAM_DISPLAY_VALUE:
+    bax_standard: TOP_PGM_DESCR
+    datatype: string
+  TOP_TASK_VALUE:
+    bax_standard: TOP_TASK_ID
+    datatype: string
+  TOP_TASK_DISPLAY_VALUE:
+    bax_standard: TOP_TASK_NAME
+    datatype: string
+  U_PLANT_NAMES_VALUE:
+    bax_standard: U_PLNT_NAME_ID
+    datatype: string
+  SYS_UPDATED_BY_VALUE:
+    bax_standard: UPDTD_BY_DTM
+    datatype: string
+  SYS_UPDATED_ON_VALUE:
+    bax_standard: UPDTD_ON_DTM
+    datatype: timestamp
+  WORK_START_VALUE:
+    bax_standard: WRK_STRT_DTM
+    datatype: timestamp
+  WORK_END_VALUE:
+    bax_standard: WRK_END_DTM
+    datatype: timestamp
+  DESCRIPTION_VALUE:
+    bax_standard: PROJ_DESCR
+    datatype: string
+  U_CONFIDENTIAL_VALUE:
+    bax_standard: U_CONFTL_IND
+    datatype: boolean
+  U_CONFIDENTIAL_GROUPS_VALUE:
+    bax_standard: U_CONFTL_GRP
+    datatype: string
+  U_CONFIDENTIAL_LEVEL_VALUE:
+    bax_standard: U_CONFTL_LVL
+    datatype: string
+
+source_path: "s3://baxaws-tst-enterpriseanalytics-edh-ita-inbound/servicenow/SPM/SNTLD/pm_project/"
+target_path: "s3://baxaws-tst-enterpriseanalytics-ita-translate/servicenow/SPM/global"
+archive_path: "s3://baxaws-tst-enterpriseanalytics-edh-ita-inbound/servicenow/SPM/archive/pm_project/"
+skip_target_path: "s3://baxaws-tst-enterpriseanalytics-edh-ita-inbound/servicenow/SPM/SNTLD/skip/pm_project_skip"
+

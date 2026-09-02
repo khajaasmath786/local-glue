@@ -1,0 +1,48 @@
+file:
+  header: true
+  delimiter: ','  
+transformations_needed: true
+target:
+  db_name: enterpriseanalytics_edh_ita_spm_global
+  table_name: p_srvc_now_rls_mgmt_sprnt
+  unique_key: SYS_GEND_ID
+columns:
+  RELEASE_VALUE:
+    bax_standard: RLS_ID
+    datatype: string
+  RELEASE_DISPLAY_VALUE:
+    bax_standard: RLS_NAME
+    datatype: string
+  RELEASE_TEAM_VALUE:
+    bax_standard: RLS_TEAM_ID
+    datatype: string
+  RELEASE_TEAM_DISPLAY_VALUE:
+    bax_standard: RLS_TEAM_NAME
+    datatype: string
+  SYS_ID_VALUE:
+    bax_standard: SYS_GEND_ID
+    datatype: string
+  COMMITTED_POINTS_VALUE:
+    bax_standard: CMTD_PT_NUM
+    datatype: decimal(38,0)
+  POINTS_VALUE:
+    bax_standard: PT_NUM
+    datatype: decimal(38,0)
+  TEAM_POINTS_VALUE:
+    bax_standard: TEAM_PT_NUM
+    datatype: decimal(38,0)
+  ACTUAL_POINTS_VALUE:
+    bax_standard: ACTL_PT_NUM
+    datatype: decimal(38,0)
+  STORY_POINTS_VALUE:
+    bax_standard: STORY_PT_NUM
+    datatype: decimal(38,0)
+  SYS_UPDATED_ON_VALUE:
+    bax_standard: UPDTD_ON_DTM
+    datatype: timestamp
+   
+source_path: "s3://baxaws-prd-enterpriseanalytics-edh-ita-inbound/servicenow/SPM/SNTLD/rm_sprint"
+target_path: "s3://baxaws-prd-enterpriseanalytics-ita-translate/servicenow/SPM/global"
+archive_path: "s3://baxaws-prd-enterpriseanalytics-edh-ita-inbound/servicenow/SPM/archive/rm_sprint"
+skip_target_path: "s3://baxaws-prd-enterpriseanalytics-edh-ita-inbound/servicenow/SPM/SNTLD/skip/rm_sprint_skip"
+

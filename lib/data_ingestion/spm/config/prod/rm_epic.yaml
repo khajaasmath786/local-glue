@@ -1,0 +1,525 @@
+file:
+  header: true
+  delimiter: ','  
+transformations_needed: true
+target:
+  db_name: enterpriseanalytics_edh_ita_spm_global
+  table_name: p_srvc_now_rls_mgmt_epic
+  unique_key: SYS_GEND_ID
+columns:
+  WORK_COST_VALUE:
+    bax_standard: WRK_CST_USD_AMT
+    datatype: decimal(38,2)
+  TIME_CONSTRAINT_VALUE:
+    bax_standard: TM_CNSTR_DESCR
+    datatype: string
+  START_DATE_VALUE:
+    bax_standard: STRT_DTM
+    datatype: timestamp
+  CONSTRAINT_DATE_VALUE:
+    bax_standard: CNSTR_DTM
+    datatype: timestamp
+  WORK_DURATION_VALUE:
+    bax_standard: WRK_DURTN_DTM
+    datatype: timestamp
+  PERCENT_COMPLETE_VALUE:
+    bax_standard: CMPL_PCT
+    datatype: decimal(38,2)
+  SUB_TREE_ROOT_VALUE:
+    bax_standard: SUB_TREE_ROOT_ID
+    datatype: string
+  KEY_MILESTONE_VALUE:
+    bax_standard: KEY_MILESTN_IND
+    datatype: boolean
+  SOFTWARE_MODEL_VALUE:
+    bax_standard: SW_MDL_DESCR
+    datatype: string
+  LEVEL_VALUE:
+    bax_standard: LVL_NUM
+    datatype: decimal(38,0)
+  OVERRIDE_STATUS_VALUE:
+    bax_standard: OVRID_STS_CD
+    datatype: boolean
+  PHASE_TYPE_VALUE:
+    bax_standard: PHASE_TYP_DESCR
+    datatype: string
+  CRITICAL_PATH_VALUE:
+    bax_standard: CRIT_PATH_IND
+    datatype: boolean
+  RELATION_APPLIED_VALUE:
+    bax_standard: RLTN_APLD_ID
+    datatype: string
+  WBS_VALUE:
+    bax_standard: WRK_BRK_DWN_STRUCT_CD
+    datatype: string
+  OPEX_COST_VALUE:
+    bax_standard: OPEX_CST_USD_AMT
+    datatype: decimal(38,2)
+  REMAINING_DURATION_VALUE:
+    bax_standard: REMNG_DURTN_DTM
+    datatype: timestamp
+  EFFORT_VALUE:
+    bax_standard: EFRT_DTM
+    datatype: timestamp
+  DURATION_VALUE:
+    bax_standard: DURTN_DTM
+    datatype: timestamp
+  MPP_TASK_ID_VALUE:
+    bax_standard: MICROSOFT_PROJ_TASK_ID
+    datatype: decimal(38,0)
+  REMAINING_EFFORT_VALUE:
+    bax_standard: REMNG_EFFORT_DTM
+    datatype: timestamp
+  RESOURCE_ALLOCATED_COST_VALUE:
+    bax_standard: RSRC_ALOCD_CST_USD_AMT
+    datatype: decimal(38,2)
+  CALCULATION_TYPE_VALUE:
+    bax_standard: CALCN_TYP_DESCR
+    datatype: string
+  BUDGET_COST_VALUE:
+    bax_standard: BUDG_CST_USD_AMT
+    datatype: decimal(38,2)
+  HAS_CONFLICT_VALUE:
+    bax_standard: HAS_CONFLICT
+    datatype: boolean
+  SYS_ID_VALUE:
+    bax_standard: SYS_GEND_ID
+    datatype: string
+  COST_VALUE:
+    bax_standard: TOT_PLAND_CST_USD_AMT
+    datatype: decimal(38,2)
+  STATUS_VALUE:
+    bax_standard: STS_DESCR
+    datatype: string
+  END_VALUE:
+    bax_standard: END_DTM
+    datatype: timestamp
+  ORIG_TOP_TASK_ID_VALUE:
+    bax_standard: ORIGL_TOP_TASK_ID
+    datatype: string
+  ROLLUP_VALUE:
+    bax_standard: ROLLP_IND
+    datatype: boolean
+  ACTUAL_BENEFITS_VALUE:
+    bax_standard: ACTL_BNFT_USD_AMT
+    datatype: decimal(38,2)
+  TASK_VALUE:
+    bax_standard: TASK_DESCR
+    datatype: string
+  SCHEDULE_END_DATE_VALUE:
+    bax_standard: SCHD_END_DTM
+    datatype: timestamp
+  TOP_PORTFOLIO_VALUE:
+    bax_standard: TOP_PRTFL_NAME
+    datatype: string
+  TIME_ZONE_VALUE:
+    bax_standard: TM_ZONE_NAME
+    datatype: string
+  ORIG_SYS_ID_VALUE:
+    bax_standard: ORIGL_SYS_GEND_ID
+    datatype: string
+  CAPEX_COST_VALUE:
+    bax_standard: CAPEX_CST_USD_AMT
+    datatype: decimal(38,2)
+  TOP_TASK_VALUE:
+    bax_standard: TOP_TASK_ID
+    datatype: string
+  RUN_CALC_BRS_VALUE:
+    bax_standard: RUN_CALCN_BUS_RULES_IND
+    datatype: boolean
+  TIME_CARD_AT_TOP_TASK_VALUE:
+    bax_standard: TM_CARD_AT_TOP_TASK_IND
+    datatype: boolean
+  WBS_ORDER_VALUE:
+    bax_standard: WRK_BRK_DWN_STRUCT_ORDR_CD
+    datatype: decimal(38,0)
+  SHADOW_VALUE:
+    bax_standard: SHDW_IND
+    datatype: boolean
+  START_VALUE:
+    bax_standard: PLAND_STRT_DT
+    datatype: date
+  ALLOW_DATES_OUTSIDE_SCHEDULE_VALUE:
+    bax_standard: ALW_DT_OUTSD_SCHD_IND
+    datatype: boolean
+  BENEFITS_VALUE:
+    bax_standard: BNFT_USD_AMT
+    datatype: decimal(38,2)
+  END_DATE_VALUE:
+    bax_standard: END_DATE
+    datatype: date
+  END_DATE_DERIVED_FROM_VALUE:
+    bax_standard: DRVD_END_DTM
+    datatype: string
+  TOP_PROGRAM_VALUE:
+    bax_standard: TOP_PGM_NAME
+    datatype: string
+  START_DATE_DERIVED_FROM_VALUE:
+    bax_standard: DRVD_STRT_DTM
+    datatype: string
+  RESOURCE_PLANNED_COST_VALUE:
+    bax_standard: RSRC_PLAND_CST_USD_AMT
+    datatype: decimal(38,2)
+  MODEL_ID_VALUE:
+    bax_standard: MDL_ID
+    datatype: string
+  HTML_DESCRIPTION_VALUE:
+    bax_standard: HYPER_TXT_MRKUP_LANG_DESCR
+    datatype: string
+  WORK_EFFORT_VALUE:
+    bax_standard: WRK_EFFORT_DTM
+    datatype: timestamp
+  VERSION_VALUE:
+    bax_standard: VER_NUM
+    datatype: decimal(38,0)
+  SCHEDULE_START_DATE_VALUE:
+    bax_standard: SCHD_STRT_DTM
+    datatype: timestamp
+  MILESTONE_VALUE:
+    bax_standard: MILESTN_IND
+    datatype: boolean
+  DEPENDENCY_VALUE:
+    bax_standard: DPNDT_DESCR
+    datatype: string
+  DEMAND_VALUE:
+    bax_standard: DMND_NAME
+    datatype: string
+  COLOR_VALUE:
+    bax_standard: COLOR_ID
+    datatype: string
+  COLOR_DISPLAY_VALUE:
+    bax_standard: COLOR_DESCR
+    datatype: string
+  COMPLETED_ESTIMATE_VALUE:
+    bax_standard: CMPLD_EST_NUM
+    datatype: decimal(38,0)
+  PERCENT_COMPLETE_BY_ESTIMATE_VALUE:
+    bax_standard: EST_CMPLN_PCT
+    datatype: decimal(38,2)
+  PLANNING_ORGANIZATION_VALUE:
+    bax_standard: PLANG_ORG_ID
+    datatype: string
+  PLANNING_ORGANIZATION_DISPLAY_VALUE:
+    bax_standard: PLANG_ORG_DESCR
+    datatype: string
+  PARENT_EPIC_VALUE:
+    bax_standard: PRNT_EPIC_ID
+    datatype: string
+  PARENT_EPIC_DISPLAY_VALUE:
+    bax_standard: PRNT_EPIC_NAME
+    datatype: string
+  MISSING_ESTIMATES_VALUE:
+    bax_standard: MISSG_EST_NUM
+    datatype: decimal(38,0)
+  TOTAL_ESTIMATE_VALUE:
+    bax_standard: TOT_EST_NUM
+    datatype: decimal(38,0)
+  THEME_VALUE:
+    bax_standard: THEME_ID
+    datatype: string
+  THEME_DISPLAY_VALUE:
+    bax_standard: THEME_NAME
+    datatype: string
+  COMPLETED_COUNT_VALUE:
+    bax_standard: CMPLD_CNT
+    datatype: decimal(38,0)
+  GLOBAL_RANK_VALUE:
+    bax_standard: GLBL_RNK_NUM
+    datatype: string
+  PERCENT_COMPLETE_BY_COUNT_VALUE:
+    bax_standard: CMPLN_PCT
+    datatype: decimal(38,2)
+  TOTAL_STORY_COUNT_VALUE:
+    bax_standard: TOT_STORY_CNT
+    datatype: decimal(38,0)
+  PRODUCT_VALUE:
+    bax_standard: PRDT_ID
+    datatype: string
+  PRODUCT_DISPLAY_VALUE:
+    bax_standard: PRDT_NAME
+    datatype: string
+  TASK_EFFECTIVE_decimal_VALUE:
+    bax_standard: TASK_EFFNS_NUM
+    datatype: string
+  ASSIGNMENT_GROUP_VALUE:
+    bax_standard: ASGNT_GRP_ID
+    datatype: string
+  ASSIGNMENT_GROUP_DISPLAY_VALUE:
+    bax_standard: ASGNT_GRP_NAME
+    datatype: string
+  CALENDAR_DURATION_VALUE:
+    bax_standard: CLNDR_DURTN_DTM
+    datatype: timestamp
+  CORRELATION_DISPLAY_VALUE:
+    bax_standard: CRLTN_DSPLY_DESCR
+    datatype: string
+  SYS_MOD_COUNT_VALUE:
+    bax_standard: MOD_CNT
+    datatype: decimal(38,0)
+  PRIORITY_VALUE:
+    bax_standard: PRIORY_CD
+    datatype: decimal(38,0)
+  PRIORITY_DISPLAY_VALUE:
+    bax_standard: PRIORY_DESCR
+    datatype: string
+  REASSIGNMENT_COUNT_VALUE:
+    bax_standard: RASGNT_CNT
+    datatype: decimal(38,0)
+  ORDER_VALUE:
+    bax_standard: ORDR_NUM
+    datatype: decimal(38,0)
+  APPROVAL_VALUE:
+    bax_standard: APRVL_CD
+    datatype: string
+  APPROVAL_DISPLAY_VALUE:
+    bax_standard: APRVL_DESCR
+    datatype: string
+  KNOWLEDGE_VALUE:
+    bax_standard: KNWLDG_IND
+    datatype: boolean
+  PARENT_VALUE:
+    bax_standard: PRNT_PROJ_NAME
+    datatype: string
+  CLOSE_NOTES_VALUE:
+    bax_standard: CLS_NOTES_TXT
+    datatype: string
+  DUE_DATE_VALUE:
+    bax_standard: DUE_DTM
+    datatype: timestamp
+  SYS_UPDATED_BY_VALUE:
+    bax_standard: UPDTD_BY_NAME
+    datatype: string
+  WORK_END_VALUE:
+    bax_standard: WRK_END_DTM
+    datatype: timestamp
+  SKILLS_VALUE:
+    bax_standard: SKILLS_DESCR
+    datatype: string
+  SYS_DOMAIN_PATH_VALUE:
+    bax_standard: SYS_DOM_PATH_VAL
+    datatype: string
+  URGENCY_VALUE:
+    bax_standard: URGNCY_CD
+    datatype: decimal(38,0)
+  URGENCY_DISPLAY_VALUE:
+    bax_standard: URGNCY_DESCR
+    datatype: string
+  WATCH_LIST_VALUE:
+    bax_standard: WATCH_LST_DESCR
+    datatype: string
+  APPROVAL_HISTORY_VALUE:
+    bax_standard: APRVL_HIST_DESCR
+    datatype: string
+  LOCATION_VALUE:
+    bax_standard: LCTN_CD
+    datatype: string
+  LOCATION_DISPLAY_VALUE:
+    bax_standard: LCTN_NAME
+    datatype: string
+  ACTION_STATUS_VALUE:
+    bax_standard: ACTN_STS_CD
+    datatype: decimal(38,0)
+  ACTION_STATUS_DISPLAY_VALUE:
+    bax_standard: ACTN_STS_DESCR
+    datatype: string
+  SERVICE_OFFERING_VALUE:
+    bax_standard: SRVC_OFFRG_ID
+    datatype: string
+  SERVICE_OFFERING_DISPLAY_VALUE:
+    bax_standard: SRVC_OFFRG_DESCR
+    datatype: string
+  COMMENTS_VALUE:
+    bax_standard: CMNT_TXT
+    datatype: string
+  OPENED_AT_VALUE:
+    bax_standard: OPEND_AT_DTM
+    datatype: timestamp
+  SLA_DUE_VALUE:
+    bax_standard: SRVC_LVL_AGRMT_DUE_DTM
+    datatype: timestamp
+  SYS_UPDATED_ON_VALUE:
+    bax_standard: UPDTD_ON_DTM
+    datatype: timestamp
+  CMDB_CI_VALUE:
+    bax_standard: CONFIG_MGMT_DB_CONFIG_ITEM_CD
+    datatype: string
+  CMDB_CI_DISPLAY_VALUE:
+    bax_standard: CONFIG_MGMT_DB_CONFIG_ITEM_NAME
+    datatype: string
+  BUSINESS_DURATION_VALUE:
+    bax_standard: BUS_DURTN_DTM
+    datatype: timestamp
+  USER_INPUT_VALUE:
+    bax_standard: USER_INPT_TXT
+    datatype: string
+  UPON_REJECT_VALUE:
+    bax_standard: UPON_REJCT_CD
+    datatype: string
+  UPON_REJECT_DISPLAY_VALUE:
+    bax_standard: UPON_REJCT_DESCR
+    datatype: string
+  DELIVERY_TASK_VALUE:
+    bax_standard: DLVRY_TASK_ID
+    datatype: string
+  DELIVERY_TASK_DISPLAY_VALUE:
+    bax_standard: DLVRY_TASK_DESCR
+    datatype: string
+  ROUTE_REASON_VALUE:
+    bax_standard: ROUT_RSN_CD
+    datatype: decimal(38,0)
+  ROUTE_REASON_DISPLAY_VALUE:
+    bax_standard: ROUT_RSN_DESCR
+    datatype: string
+  NEEDS_ATTENTION_VALUE:
+    bax_standard: NEEDS_ATTN_IDICATOR
+    datatype: boolean
+  SHORT_DESCRIPTION_VALUE:
+    bax_standard: SHRT_DESCR
+    datatype: string
+  APPROVAL_SET_VALUE:
+    bax_standard: APRVL_SET_DTM
+    datatype: timestamp
+  CONTACT_TYPE_VALUE:
+    bax_standard: CNTCT_TYP_DESCR
+    datatype: string
+  DESCRIPTION_VALUE:
+    bax_standard: EPIC_DESCR
+    datatype: string
+  CLOSED_AT_VALUE:
+    bax_standard: CLSD_AT_DTM
+    datatype: timestamp
+  ACTIVITY_DUE_VALUE:
+    bax_standard: ACTVY_DUE_DTM
+    datatype: timestamp
+  SYS_CREATED_BY_VALUE:
+    bax_standard: CRTD_BY_NAME
+    datatype: string
+  COMPANY_VALUE:
+    bax_standard: CO_ID
+    datatype: string
+  COMPANY_DISPLAY_VALUE:
+    bax_standard: CO_DESCR
+    datatype: string
+  OPENED_BY_VALUE:
+    bax_standard: OPEND_BY_ID
+    datatype: string
+  OPENED_BY_DISPLAY_VALUE:
+    bax_standard: OPEND_BY_NAME
+    datatype: string
+  MADE_SLA_VALUE:
+    bax_standard: MADE_SRVC_LVL_AGRMT_IND
+    datatype: boolean
+  SYS_CLASS_NAME_VALUE:
+    bax_standard: CLASS_NAME
+    datatype: string
+  SYS_CLASS_NAME_DISPLAY_VALUE:
+    bax_standard: CLASS_DESCR
+    datatype: string
+  decimal_VALUE:
+    bax_standard: EPIC_NUM
+    datatype: string
+  IMPACT_VALUE:
+    bax_standard: IMPCT_CD
+    datatype: decimal(38,0)
+  IMPACT_DISPLAY_VALUE:
+    bax_standard: IMPCT_DESCR
+    datatype: string
+  GROUP_LIST_VALUE:
+    bax_standard: GRP_LST_DESCR
+    datatype: string
+  U_DATE_VALUE:
+    bax_standard: U_DTM
+    datatype: string
+  CONTRACT_VALUE:
+    bax_standard: CNTR_ID
+    datatype: string
+  CONTRACT_DISPLAY_VALUE:
+    bax_standard: CNTR_NAME
+    datatype: string
+  UNIVERSAL_REQUEST_VALUE:
+    bax_standard: UNVSL_RQST_ID
+    datatype: string
+  UPON_APPROVAL_VALUE:
+    bax_standard: UPON_APRVL_CD
+    datatype: string
+  UPON_APPROVAL_DISPLAY_VALUE:
+    bax_standard: UPON_APRVL_DESCR
+    datatype: string
+  BUSINESS_SERVICE_VALUE:
+    bax_standard: BUS_SRVC_NAME
+    datatype: string
+  ASSIGNED_TO_VALUE:
+    bax_standard: ASGND_TO_ID
+    datatype: string
+  ASSIGNED_TO_DISPLAY_VALUE:
+    bax_standard: ASGND_TO_NAME
+    datatype: string
+  TIME_WORKED_VALUE:
+    bax_standard: TM_WORKED_DTM
+    datatype: timestamp
+  CORRELATION_ID_VALUE:
+    bax_standard: CRLTN_ID
+    datatype: string
+  SYS_CREATED_ON_VALUE:
+    bax_standard: CRTD_ON_DTM
+    datatype: timestamp
+  EXPECTED_START_VALUE:
+    bax_standard: EXPCTD_STRT_DTM
+    datatype: timestamp
+  CMDB_CI_BUSINESS_APP_VALUE:
+    bax_standard: CONFIG_MGMT_DB_CONFIG_ITEM_BUS_APP_CD
+    datatype: string
+  CMDB_CI_BUSINESS_APP_DISPLAY_VALUE:
+    bax_standard: CONFIG_MGMT_DB_CONFIG_ITEM_BUS_APP_NAME
+    datatype: string
+  STATE_VALUE:
+    bax_standard: STATE_CD
+    datatype: decimal(38,0)
+  STATE_DISPLAY_VALUE:
+    bax_standard: STATE_DESCR
+    datatype: string
+  CLOSED_BY_VALUE:
+    bax_standard: CLSD_BY_ID
+    datatype: string
+  CLOSED_BY_DISPLAY_VALUE:
+    bax_standard: CLSD_BY_NAME
+    datatype: string
+  SYS_DOMAIN_VALUE:
+    bax_standard: DOM_NAME
+    datatype: string
+  ESCALATION_VALUE:
+    bax_standard: ESCLTN_CD
+    datatype: decimal(38,0)
+  ESCALATION_DISPLAY_VALUE:
+    bax_standard: ESCLTN_DESCR
+    datatype: string
+  ADDITIONAL_ASSIGNEE_LIST_VALUE:
+    bax_standard: ADDL_ASGNE_LST_NAME
+    datatype: string
+  ACTIVE_VALUE:
+    bax_standard: ACTV_IND
+    datatype: boolean
+  DELIVERY_PLAN_VALUE:
+    bax_standard: DLVRY_PLAN_DESCR
+    datatype: string
+  WORK_NOTES_VALUE:
+    bax_standard: WRK_NOTES_TXT
+    datatype: string
+  FOLLOW_UP_VALUE:
+    bax_standard: FLLW_UP_DTM
+    datatype: timestamp
+  WORK_NOTES_LIST_VALUE:
+    bax_standard: WRK_NOTES_LST_NAME
+    datatype: string
+  WORK_START_VALUE:
+    bax_standard: WRK_STRT_DTM
+    datatype: timestamp
+  COMMENTS_AND_WORK_NOTES_VALUE:
+    bax_standard: CMNT_N_WRK_NOTES_TXT
+    datatype: string
+
+source_path: "s3://baxaws-prd-enterpriseanalytics-edh-ita-inbound/servicenow/SPM/SNTLD/rm_epic"
+target_path: "s3://baxaws-prd-enterpriseanalytics-ita-translate/servicenow/SPM/global"
+archive_path: "s3://baxaws-prd-enterpriseanalytics-edh-ita-inbound/servicenow/SPM/archive/rm_epic"
+skip_target_path: "s3://baxaws-prd-enterpriseanalytics-edh-ita-inbound/servicenow/SPM/SNTLD/skip/rm_epic_skip"
+

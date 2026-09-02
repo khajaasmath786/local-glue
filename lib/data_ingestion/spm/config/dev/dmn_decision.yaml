@@ -1,0 +1,68 @@
+file:
+  header: true
+  delimiter: ','  
+transformations_needed: true
+target:
+  db_name: enterpriseanalytics_edh_ita_spm_global
+  table_name: p_srvc_now_dcsn_mgmt_dcsn
+  unique_key: SYS_GEND_ID
+columns:
+  PARENT_VALUE:
+    bax_standard: PRNT_ID
+    datatype: string
+  PARENT_DISPLAY_VALUE:
+    bax_standard: PRNT_PROJ_CD
+    datatype: string
+  NUMBER_VALUE:
+    bax_standard: DCSN_NUM
+    datatype: string
+  SHORT_DESCRIPTION_VALUE:
+    bax_standard: DCSN_SHRT_DESCR
+    datatype: string
+  DESCRIPTION_VALUE:
+    bax_standard: DCSN_DESCR
+    datatype: string
+  IMPACT_VALUE:
+    bax_standard: IMPCT_CD
+    datatype: decimal(38,0)
+  IMPACT_DISPLAY_VALUE:
+    bax_standard: IMPCT_DESCR
+    datatype: string
+  PRIORITY_VALUE:
+    bax_standard: PRIORY_CD
+    datatype: decimal(38,0)
+  ASSIGNED_TO_VALUE:
+    bax_standard: ASGND_TO_ID
+    datatype: string
+  ASSIGNED_TO_DISPLAY_VALUE:
+    bax_standard: ASGND_TO_NAME
+    datatype: string
+  DUE_DATE_VALUE:
+    bax_standard: DUE_DTM
+    datatype: timestamp
+  DECISION_STATE_VALUE:
+    bax_standard: DCSN_STATE_CD
+    datatype: decimal(38,0)
+  DECISION_STATE_DISPLAY_VALUE:
+    bax_standard: DCSN_STATE_DESCR
+    datatype: string
+  SYS_ID_VALUE:
+    bax_standard: SYS_GEND_ID
+    datatype: string
+  STATE_VALUE:
+    bax_standard: STATE_CD
+    datatype: decimal(38,0)
+  STATE_DISPLAY_VALUE:
+    bax_standard: STATE_DESCR
+    datatype: string
+  PRIORITY_DISPLAY_VALUE:
+    bax_standard: PRIORY_DESCR
+    datatype: string
+  SYS_UPDATED_ON_VALUE:
+    bax_standard: UPDTD_ON_DTM
+    datatype: timestamp
+   
+source_path: "s3://baxaws-dev-enterpriseanalytics-edh-ita-inbound/servicenow/SPM/SNTLD/dmn_decision"
+target_path: "s3://baxaws-dev-enterpriseanalytics-ita-translate/servicenow/SPM/global"
+archive_path: "s3://baxaws-dev-enterpriseanalytics-edh-ita-inbound/servicenow/SPM/archive/dmn_decision"
+skip_target_path: "s3://baxaws-dev-enterpriseanalytics-edh-ita-inbound/servicenow/SPM/SNTLD/skip/dmn_decision_skip"

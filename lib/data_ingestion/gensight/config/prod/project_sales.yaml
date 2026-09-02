@@ -1,0 +1,35 @@
+file:
+  header: true
+  delimiter: '|'  
+transformations_needed: true
+target:
+  db_name: enterpriseanalytics_edh_ita_gensight_global
+  table_name: P_GS_PROJ_SLS
+  unique_key: PROJ_ID,CLNDR_YR
+columns:
+  ProjectID:
+    bax_standard: PROJ_ID
+    datatype: long
+  Name:
+    bax_standard: PROJ_NAME
+    datatype: string
+  Calendar Year:
+    bax_standard: CLNDR_YR
+    datatype: long
+  RA Net Incremental Sales (Total Revenue) USD:
+    bax_standard: RISK_ADJ_NET_INCRMT_SLS_USD_AMT
+    datatype: decimal(38,2)
+  RA With Project Total Revenue USD:
+    bax_standard: RISK_ADJ_SLS_WITH_PROJ_USD_AMT
+    datatype: decimal(38,2)
+  RA Without Project Total Revenue USD:
+    bax_standard: RISK_ADJ_SLS_WOUT_PROJ_USD_AMT
+    datatype: decimal(38,2)
+  RA Amortization Total USD:
+    bax_standard: RISK_ADJ_SGP_USD_AMT
+    datatype: decimal(38,2)
+    
+source_path: "s3://baxaws-prd-enterpriseanalytics-edh-ita-inbound/GENSIGHT/global/globalscape/project_sales"
+target_path: "s3://baxaws-prd-enterpriseanalytics-ita-translate/GENSIGHT/global"
+skip_target_path: "s3://baxaws-prd-enterpriseanalytics-edh-ita-inbound/GENSIGHT/global/globalscape/project_sales_skip"
+archive_path: "s3://baxaws-prd-enterpriseanalytics-edh-ita-inbound/GENSIGHT/archive/global/project_sales"
