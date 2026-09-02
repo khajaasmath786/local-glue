@@ -1,0 +1,126 @@
+file:
+  header: true
+  delimiter: ','  
+transformations_needed: true
+target:
+  db_name: enterpriseanalytics_edh_ita_spm_global
+  table_name: p_srvc_now_proj_mgmt_proj_bsln
+  unique_key: SYS_GEND_ID
+columns:
+  IRR_VALUE:
+    bax_standard: IRR_VAL
+    datatype: decimal(38,2)
+  RESOURCE_ALLOCATED_COST_VALUE:
+    bax_standard: RSRC_ALOCD_CST
+    datatype: decimal(38,2)
+  PLANNED_TASK_BASELINE_VALUE:
+    bax_standard: PLAND_TASK_BSLN_ID
+    datatype: string
+  PLANNED_TASK_BASELINE_DISPLAY_VALUE:
+    bax_standard: PLAND_TASK_BSLN_DESCR
+    datatype: string
+  ROI_VALUE:
+    bax_standard: ROI_PCTG
+    datatype: decimal(38,2)
+  ESTIMATE_TO_COMPLETION_VALUE:
+    bax_standard: EST_TO_CMPLN_VAL
+    datatype: decimal(38,2)
+  SYS_ID_VALUE:
+    bax_standard: SYS_GEND_ID
+    datatype: string
+  U_CAPEX_VARIANCE_VALUE:
+    bax_standard: U_CAPEX_VARNC
+    datatype: decimal(38,2)
+  PROGRAM_VALUE:
+    bax_standard: PGM_ID
+    datatype: string
+  PROGRAM_DISPLAY_VALUE:
+    bax_standard: PGM_DESCR
+    datatype: string
+  BUDGET_COST_VALUE:
+    bax_standard: BUDG_CST_USD_AMT
+    datatype: decimal(38,2)
+  FORECAST_COST_VALUE:
+    bax_standard: FCST_CST_USD_AMT
+    datatype: decimal(38,2)
+  SCORE_VALUE:
+    bax_standard: SCR_VAL
+    datatype: decimal(38,2)
+  CAPEX_ESTIMATE_TO_COMPLETION_VALUE:
+    bax_standard: CAPEX_EST_TO_CMPLN_VAL
+    datatype: decimal(38,2)
+  PM_PROJECT_VALUE:
+    bax_standard: PROJ_ID
+    datatype: string
+  PM_PROJECT_DISPLAY_VALUE:
+    bax_standard: PROJ_DESCR
+    datatype: string
+  U_OPEX_VARIANCE_VALUE:
+    bax_standard: U_OPEX_VARIANCE
+    datatype: decimal(38,2)
+  U_ACTUAL_OPEX_VALUE:
+    bax_standard: U_ACTUAL_OPEX
+    datatype: decimal(38,2)
+  CAPEX_COST_VALUE:
+    bax_standard: CAPEX_CST_USD_AMT
+    datatype: decimal(38,2)
+  COST_VALUE:
+    bax_standard: CST_USD_AMT
+    datatype: decimal(38,2)
+  BENEFITS_VALUE:
+    bax_standard: BNFT_VAL
+    datatype: decimal(38,2)
+  CAPEX_FORECAST_COST_VALUE:
+    bax_standard: CAPEX_FCST_CST_USD_AMT
+    datatype: decimal(38,2)
+  DISCOUNT_RATE_VALUE:
+    bax_standard: DISC_RT_PCTG
+    datatype: decimal(38,2)
+  OPEX_ESTIMATE_TO_COMPLETION_VALUE:
+    bax_standard: OPEX_EST_TO_CMPLN_VAL
+    datatype: decimal(38,2)
+  U_TOTAL_VARIANCE_VALUE:
+    bax_standard: U_TOT_VARNC
+    datatype: decimal(38,2)
+  OPEX_COST_VALUE:
+    bax_standard: OPEX_CST_USD_AMT
+    datatype: decimal(38,2)
+  U_BASELINE_DATE_VALUE:
+    bax_standard: U_BSLN_DT
+    datatype: timestamp
+  RESOURCE_PLANNED_COST_VALUE:
+    bax_standard: RSRC_PLAND_CST_USD_AMT
+    datatype: decimal(38,2)
+  PORTFOLIO_VALUE:
+    bax_standard: PRTFL_ID
+    datatype: string
+  PORTFOLIO_DISPLAY_VALUE:
+    bax_standard: PRTFL_DESCR
+    datatype: string
+  VALUE:
+    bax_standard: VALUE1
+    datatype: decimal(38,2)
+  PEX_FORECAST_COST_VALUE:
+    bax_standard: OPEX_FCST_CST_USD_AMT
+    datatype: decimal(38,2)
+  NPV_VALUE:
+    bax_standard: NET_PRFT_VAL_USD_AMT
+    datatype: decimal(38,2)
+  U_SUB_PORTFOLIO_VALUE:
+    bax_standard: U_SUB_PRTFL_ID
+    datatype: string
+  U_TOTAL_ACTUAL_VALUE:
+    bax_standard: U_TOT_ACTL_VAL
+    datatype: decimal(38,2)
+  U_ACTUAL_CAPEX_VALUE:
+    bax_standard: U_ACTL_CAPEX_VAL
+    datatype: decimal(38,2)
+  SYS_UPDATED_ON_VALUE:
+    bax_standard: UPDTD_ON
+    datatype: timestamp
+   
+source_path: "s3://baxaws-tst-enterpriseanalytics-edh-ita-inbound/servicenow/SPM/SNTLD/pm_project_baseline"
+target_path: "s3://baxaws-tst-enterpriseanalytics-ita-translate/servicenow/SPM/global"
+archive_path: "s3://baxaws-tst-enterpriseanalytics-edh-ita-inbound/servicenow/SPM/archive/pm_project_baseline"
+skip_target_path: "s3://baxaws-tst-enterpriseanalytics-edh-ita-inbound/servicenow/SPM/SNTLD/skip/pm_project_baseline_skip"
+

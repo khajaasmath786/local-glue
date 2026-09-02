@@ -1,0 +1,48 @@
+file:
+  header: true
+  delimiter: ','  
+transformations_needed: true
+target:
+  db_name: enterpriseanalytics_edh_ita_spm_global
+  table_name: p_srvc_now_pland_task_bsln_ite
+  unique_key: SYS_GEND_ID
+columns:
+  SYS_ID_VALUE:
+    bax_standard: SYS_GEND_ID
+    datatype: string
+  SYS_UPDATED_BY_VALUE:
+    bax_standard: UPDTD_BY_NAME
+    datatype: string
+  SYS_UPDATED_ON_VALUE:
+    bax_standard: UPDTD_ON_DTM
+    datatype: timestamp
+  SYS_CREATED_BY_VALUE:
+    bax_standard: CRTD_BY_NAME
+    datatype: string
+  SYS_CREATED_ON_VALUE:
+    bax_standard: CRTD_ON_DTM
+    datatype: timestamp
+  SYS_MOD_COUNT_VALUE:
+    bax_standard: MOD_CNT
+    datatype: decimal(38,0)
+  SYS_DOMAIN_VALUE:
+    bax_standard: DOM_NAME
+    datatype: string
+  BASELINE_DISPLAY_VALUE:
+    bax_standard: BSLN_NAME
+    datatype: string
+  TASK_DISPLAY_VALUE:
+    bax_standard: TASK_NAME
+    datatype: string
+  START_VALUE:
+    bax_standard: TASK_STRT_DTM
+    datatype: timestamp
+  END_VALUE:
+    bax_standard: TASK_END_DTM
+    datatype: timestamp
+   
+source_path: "s3://baxaws-prd-enterpriseanalytics-edh-ita-inbound/servicenow/SPM/SNTLD/planned_task_baseline_item"
+target_path: "s3://baxaws-prd-enterpriseanalytics-ita-translate/servicenow/SPM/global"
+archive_path: "s3://baxaws-prd-enterpriseanalytics-edh-ita-inbound/servicenow/SPM/archive/planned_task_baseline_item"
+skip_target_path: "s3://baxaws-prd-enterpriseanalytics-edh-ita-inbound/servicenow/SPM/SNTLD/skip/planned_task_baseline_item_skip"
+

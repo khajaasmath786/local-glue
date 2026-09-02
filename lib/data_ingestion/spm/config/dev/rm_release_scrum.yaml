@@ -1,0 +1,42 @@
+file:
+  header: true
+  delimiter: ','  
+transformations_needed: true
+target:
+  db_name: enterpriseanalytics_edh_ita_spm_global
+  table_name: p_srvc_now_rls_mgmt_rls_scrum
+  unique_key: SYS_GEND_ID
+columns:
+  SYS_ID_VALUE:
+    bax_standard: SYS_GEND_ID
+    datatype: string
+  STORY_HAS_TASKS_VALUE:
+    bax_standard: STORY_HAS_TASK_IND
+    datatype: decimal(38,2)
+  DEFAULT_TEAM_VALUE:
+    bax_standard: DFLT_TEAM_ID
+    datatype: string
+  DEFAULT_TEAM_DISPLAY_VALUE:
+    bax_standard: DFLT_TEAM_NAME
+    datatype: string
+  RELEASE_CAPACITY_VALUE:
+    bax_standard: RLS_CPTY_VAL
+    datatype: decimal(38,2)
+  POINTS_VALUE:
+    bax_standard: PT_NUM
+    datatype: decimal(38,2)
+  ORIG_SYS_ID_VALUE:
+    bax_standard: ORIGL_SYS_GEND_ID
+    datatype: string
+  ORIG_SYS_ID_DISPLAY_VALUE:
+    bax_standard: ORIGL_SYS_GEND_NAME
+    datatype: string
+  SYS_UPDATED_ON_VALUE:
+    bax_standard: UPDTD_ON_DTM
+    datatype: timestamp
+   
+source_path: "s3://baxaws-dev-enterpriseanalytics-edh-ita-inbound/servicenow/SPM/SNTLD/rm_release_scrum"
+target_path: "s3://baxaws-dev-enterpriseanalytics-ita-translate/servicenow/SPM/global"
+archive_path: "s3://baxaws-dev-enterpriseanalytics-edh-ita-inbound/servicenow/SPM/archive/rm_release_scrum"
+skip_target_path: "s3://baxaws-dev-enterpriseanalytics-edh-ita-inbound/servicenow/SPM/SNTLD/skip/rm_release_scrum_skip"
+

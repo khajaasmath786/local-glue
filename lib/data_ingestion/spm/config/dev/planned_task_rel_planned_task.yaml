@@ -1,0 +1,87 @@
+file:
+  header: true
+  delimiter: ','
+transformations_needed: true
+target:
+  db_name: enterpriseanalytics_edh_ita_spm_global
+  table_name: p_srvc_now_pland_task_rltn
+  unique_key: SYS_GEND_ID
+columns:
+  SYS_DOMAIN_VALUE:
+    bax_standard: DOM_NAME
+    datatype: string
+  CHILD_TOP_TASK_VALUE:
+    bax_standard: CHILD_TOP_TASK_ID
+    datatype: string
+  CHILD_TOP_TASK_DISPLAY_VALUE:
+    bax_standard: CHILD_TOP_TASK_DESCR
+    datatype: string
+  ORIG_SYS_ID_VALUE:
+    bax_standard: ORIGL_SYS_GEND_ID
+    datatype: string
+  SYS_ID_VALUE:
+    bax_standard: SYS_GEND_ID
+    datatype: string
+  PROCESS_FLAG_VALUE:
+    bax_standard: PRCS_IND
+    datatype: boolean
+  EXTERNAL_VALUE:
+    bax_standard: EXTRNL_IND
+    datatype: boolean
+  SUB_TYPE_VALUE:
+    bax_standard: SUB_TYP_CD
+    datatype: string
+  SUB_TYPE_DISPLAY_VALUE:
+    bax_standard: SUB_TYP_DESCR
+    datatype: string
+  INTER_TASK_DEPENDENCY_TYPE_VALUE:
+    bax_standard: INNER_TASK_DPNDT_TYP_CD
+    datatype: string
+  INTER_TASK_DEPENDENCY_TYPE_DISPLAY_VALUE:
+    bax_standard: INNER_TASK_DPNDT_TYP_DESCR
+    datatype: string
+  RUN_CALC_BRS_VALUE:
+    bax_standard: RUN_CALCN_BUS_RULES_IND
+    datatype: boolean
+  PARENT_TOP_TASK_VALUE:
+    bax_standard: PRNT_TOP_TASK_ID
+    datatype: string
+  PARENT_TOP_TASK_DISPLAY_VALUE:
+    bax_standard: PRNT_TOP_TASK_DESCR
+    datatype: string
+  LAG_VALUE:
+    bax_standard: LAG_DTM
+    datatype: timestamp
+  CHILD_VALUE:
+    bax_standard: CHILD_ID
+    datatype: string
+  TYPE_VALUE:
+    bax_standard: TYP_ID
+    datatype: string
+  TYPE_DISPLAY_VALUE:
+    bax_standard: TYP_DESCR
+    datatype: string
+  SYS_CREATED_BY_VALUE:
+    bax_standard: CRTD_BY_NAME
+    datatype: string
+  SYS_CREATED_ON_VALUE:
+    bax_standard: CRTD_ON_DTM
+    datatype: timestamp
+  SYS_MOD_COUNT_VALUE:
+    bax_standard: MOD_CNT
+    datatype: decimal(38,0)
+  SYS_UPDATED_BY_VALUE:
+    bax_standard: UPDTD_BY_NAME
+    datatype: string
+  SYS_UPDATED_ON_VALUE:
+    bax_standard: UPDTD_ON_DTM
+    datatype: timestamp
+  PARENT_VALUE:
+    bax_standard: PRNT_ID
+    datatype: string
+
+source_path: "s3://baxaws-dev-enterpriseanalytics-edh-ita-inbound/servicenow/SPM/SNTLD/planned_task_rel_planned_task"
+target_path: "s3://baxaws-dev-enterpriseanalytics-ita-translate/servicenow/SPM/global"
+archive_path: "s3://baxaws-dev-enterpriseanalytics-edh-ita-inbound/servicenow/SPM/archive/planned_task_rel_planned_task"
+skip_target_path: "s3://baxaws-dev-enterpriseanalytics-edh-ita-inbound/servicenow/SPM/SNTLD/skip/planned_task_rel_planned_task_skip"
+

@@ -1,0 +1,42 @@
+file:
+  header: true
+  delimiter: ','
+transformations_needed: true
+target:
+  db_name: enterpriseanalytics_edh_ita_spm_global
+  table_name: p_srvc_now_rgn
+  unique_key: SYS_GEND_ID
+columns:
+  SYS_CREATED_BY_VALUE:
+    bax_standard: CRTD_BY_NAME
+    datatype: string
+  SYS_CREATED_ON_VALUE:
+    bax_standard: CRTD_ON_DTM
+    datatype: timestamp
+  SYS_ID_VALUE:
+    bax_standard: SYS_GEND_ID
+    datatype: string
+  SYS_MOD_COUNT_VALUE:
+    bax_standard: MOD_CNT
+    datatype: decimal(38,0)
+  SYS_TAGS_VALUE:
+    bax_standard: TAGS_DESCR
+    datatype: string
+  SYS_UPDATED_BY_VALUE:
+    bax_standard: UPDTD_BY_NAME
+    datatype: string
+  SYS_UPDATED_ON_VALUE:
+    bax_standard: UPDTD_ON_DTM
+    datatype: timestamp
+  U_ACTIVE_VALUE:
+    bax_standard: U_ACTV_IND
+    datatype: boolean
+  U_REGION_VALUE:
+    bax_standard: U_RGN_NAME
+    datatype: string
+
+source_path: "s3://baxaws-prd-enterpriseanalytics-edh-ita-inbound/servicenow/SPM/SNTLD/u_region"
+target_path: "s3://baxaws-prd-enterpriseanalytics-ita-translate/servicenow/SPM/global"
+archive_path: "s3://baxaws-prd-enterpriseanalytics-edh-ita-inbound/servicenow/SPM/archive/u_region"
+skip_target_path: "s3://baxaws-prd-enterpriseanalytics-edh-ita-inbound/servicenow/SPM/SNTLD/skip/u_region_skip"
+

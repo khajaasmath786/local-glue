@@ -1,0 +1,33 @@
+file:
+  header: true
+  delimiter: ','  
+transformations_needed: true
+target:
+  db_name: enterpriseanalytics_edh_ita_spm_global
+  table_name: p_srvc_now_sys_user_grmember
+  unique_key: SYS_GEND_ID
+columns:
+  GROUP_VALUE:
+    bax_standard: GRP_ID
+    datatype: string
+  GROUP_DISPLAY_VALUE:
+    bax_standard: GRP_NAME
+    datatype: string
+  USER_VALUE:
+    bax_standard: USER_ID
+    datatype: string
+  USER_DISPLAY_VALUE:
+    bax_standard: USER_NAME
+    datatype: string
+  SYS_UPDATED_ON_VALUE:
+    bax_standard: UPDTD_ON_DTM
+    datatype: timestamp
+  SYS_ID_VALUE:
+    bax_standard: SYS_GEND_ID
+    datatype: string
+
+source_path: "s3://baxaws-tst-enterpriseanalytics-edh-ita-inbound/servicenow/SPM/SNTLD/sys_user_grmember"
+target_path: "s3://baxaws-tst-enterpriseanalytics-ita-translate/servicenow/SPM/global"
+archive_path: "s3://baxaws-tst-enterpriseanalytics-edh-ita-inbound/servicenow/SPM/archive/sys_user_grmember"
+skip_target_path: "s3://baxaws-tst-enterpriseanalytics-edh-ita-inbound/servicenow/SPM/SNTLD/skip/sys_user_grmember_skip"
+

@@ -1,0 +1,102 @@
+file:
+  header: true
+  delimiter: ','  
+transformations_needed: true
+target:
+  db_name: enterpriseanalytics_edh_ita_spm_global
+  table_name: p_srvc_now_proj_mgmt_pgm_task
+  unique_key: SYS_GEND_ID
+columns:
+  SUB_TREE_ROOT_VALUE:
+    bax_standard: SUB_TREE_ROOT_ID
+    datatype: string
+  SUB_TREE_ROOT_DISPLAY_VALUE:
+    bax_standard: SUB_TREE_ROOT_NAME
+    datatype: string
+  parent_value:
+    bax_standard: PRNT_ID
+    datatype: string
+  SHORT_DESCRIPTION_VALUE:
+    bax_standard: TASK_SHRT_DESCR
+    datatype: string
+  NUMBER_VALUE:
+    bax_standard: TASK_NUM
+    datatype: string
+  TOP_PROGRAM_VALUE:
+    bax_standard: TOP_PGM_ID
+    datatype: string
+  TOP_PROGRAM_DISPLAY_VALUE:
+    bax_standard: TOP_PGM_DESCR
+    datatype: string
+  DESCRIPTION_VALUE:
+    bax_standard: TASK_DESCR
+    datatype: string
+  START_DATE_VALUE:
+    bax_standard: STRT_DTM
+    datatype: timestamp
+  END_DATE_VALUE:
+    bax_standard: END_DTM
+    datatype: timestamp
+  ASSIGNED_TO_VALUE:
+    bax_standard: ASGND_TO_ID
+    datatype: string
+  ASSIGNED_TO_DISPLAY_VALUE:
+    bax_standard: ASGND_TO_NAME
+    datatype: string
+  STATE_VALUE:
+    bax_standard: STATE_CD
+    datatype: decimal(38,0)
+  STATE_DISPLAY_VALUE:
+    bax_standard: STATE_DESCR
+    datatype: string
+  PERCENT_COMPLETE_VALUE:
+    bax_standard: CMPLN_PCT
+    datatype: decimal(38,2)
+  MILESTONE_VALUE:
+    bax_standard: MILESTN_IND
+    datatype: boolean
+  KEY_MILESTONE_VALUE:
+    bax_standard: KEY_MILESTN_IND
+    datatype: boolean
+  STATUS_VALUE:
+    bax_standard: STS_CD
+    datatype: decimal(38,0)
+  STATUS_DISPLAY_VALUE:
+    bax_standard: STS_DESCR
+    datatype: string
+  PRIORITY_VALUE:
+    bax_standard: PRIORY_CD
+    datatype: decimal(38,0)
+  PRIORITY_DISPLAY_VALUE:
+    bax_standard: PRIORY_DESCR
+    datatype: string
+  SYS_ID_VALUE:
+    bax_standard: SYS_GEND_ID
+    datatype: string
+  U_EXTERNAL_PARTY_ASSIGNEE_VALUE:
+    bax_standard: U_EXTRNL_PARTY_ASGNE
+    datatype: string
+  WBS_VALUE:
+    bax_standard: WRK_BRK_DWN_STRUCT_CD
+    datatype: decimal(38,0)
+  WBS_ORDER_VALUE:
+    bax_standard: WRK_BRK_DWN_STRUCT_ORDR_CD
+    datatype: decimal(38,0)
+  WORK_START_VALUE:
+    bax_standard: WRK_STRT_DTM
+    datatype: timestamp
+  WORK_END_VALUE:
+    bax_standard: WRK_END_DTM
+    datatype: timestamp
+  SYS_TAGS_VALUE:
+    bax_standard: TAGS_DESCR
+    datatype: string
+  SYS_UPDATED_ON_VALUE:
+    bax_standard: UPDTD_ON_DTM
+    datatype: timestamp
+   
+source_path: "s3://baxaws-prd-enterpriseanalytics-edh-ita-inbound/servicenow/SPM/SNTLD/pm_program_task"
+target_path: "s3://baxaws-prd-enterpriseanalytics-ita-translate/servicenow/SPM/global"
+archive_path: "s3://baxaws-prd-enterpriseanalytics-edh-ita-inbound/servicenow/SPM/archive/pm_program_task"
+skip_target_path: "s3://baxaws-prd-enterpriseanalytics-edh-ita-inbound/servicenow/SPM/SNTLD/skip/pm_program_task_skip"
+
