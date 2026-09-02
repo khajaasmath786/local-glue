@@ -1,9 +1,0 @@
-{
-  "sql": {
-    "step7_compare_schemas": {
-      "action": "compare_schema",
-      "path1": "s3://baxaws-dev-enterpriseanalytics-edh-gabi-translate/APAC/supplychain/addressbook/p_jde_addr_bk_mstr/",
-      "path2": "s3://baxaws-dev-enterpriseanalytics-edh-gabi-translate/backup/APAC/supplychain/addressbook/20240603/p_jde_addr_bk_mstr_after_update3/"
-    }
-  }
-}
